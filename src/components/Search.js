@@ -20,11 +20,7 @@ const Search = (props) => {
   const handleSearch = (event) => {
     event.preventDefault();
     console.log(state);
-    setState({
-      description: "",
-      location: "",
-      full_time: false,
-    });
+    props.onSearch(state);
   };
 
   return (
